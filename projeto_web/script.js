@@ -33,3 +33,23 @@ console.log(checkCadastro)//debug de verificação do requisito 4
  console.log("Idades:"+idade1,idade2,idade3)
  console.log("Cadastros:"+ temCadastro1,temCadastro2,temCadastro3)
  console.log(`Array de cidades: ${cidade}`)
+
+ console.log("Semana 3")//Semana 3
+
+ //Requisito 1. Transforme os itens que criamos nas últimas semanas em objetos.
+
+ const objeto1= {nome1,idade1,temCadastro1}
+ const objeto2= {nome2,idade2,temCadastro2}
+ const objeto3= {nome3,idade3,temCadastro3}
+
+ console.log(objeto1,objeto2,objeto3)
+
+ //requisito 2. Crie um array para guardar os objetos. Este array deve estar vazio
+
+ const arrayObjeto=[]
+
+//requisito 3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, utilizando o push()
+
+arrayObjeto.push(objeto1,objeto2,objeto3)
+
+console.log(arrayObjeto)
