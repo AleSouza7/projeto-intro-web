@@ -1,4 +1,48 @@
+/* //Semana 9 */
 *{
     margin:0;
     padding: 0;
+}
+header{
+    border: 1px solid black;
+    text-align: center;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    align-items: center;
+    background-color: antiquewhite;
+}
+main{
+    background-color: cornflowerblue;
+    min-height: 80vh;
+}
+
+footer{
+    border: 1px solid blue;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: orange;
+}
+
+.container{
+    display: flex;
+    background-color: brown;
+    margin: ;
+}
+
+.signos{
+    background-color: azure;
+    border: 1px solid;
+    margin-left: 680px;
+    float:left;
+}
+ul{
+    list-style: none;
+}
+li{
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px;
 }
