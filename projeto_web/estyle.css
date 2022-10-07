@@ -23,19 +23,26 @@ footer{
     height: 10vh;
     display: flex;
     align-items: center;
-    background-color: orange;
+    background-color: orange; 
 }
 
-.container{
+.content-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr
+    1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+}
+
+.container-signos{
     display: flex;
     background-color: brown;
-    margin: ;
 }
 
 .signos{
     background-color: azure;
     border: 1px solid;
-    margin-left: 680px;
+    margin-left: 20vh;
     float:left;
 }
 ul{
