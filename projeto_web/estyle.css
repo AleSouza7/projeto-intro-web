@@ -1,9 +1,10 @@
 /* //Semana 9 */
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
-header{
+
+header {
     border: 1px solid black;
     text-align: center;
     padding: 0px 20px;
@@ -13,43 +14,70 @@ header{
     align-items: center;
     background-color: antiquewhite;
 }
-main{
+
+main {
+    min-width: 1200px;
     background-color: cornflowerblue;
     min-height: 80vh;
 }
 
-footer{
+footer {
     border: 1px solid blue;
     height: 10vh;
     display: flex;
     align-items: center;
-    background-color: orange; 
+    background-color: orange;
 }
 
-.content-container{
+.content-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr
-    1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     padding: 10px;
 }
 
-.container-signos{
+.container-signos {
     display: flex;
     background-color: brown;
 }
 
-.signos{
+.signos {
     background-color: azure;
     border: 1px solid;
     margin-left: 20vh;
-    float:left;
+    float: left;
 }
-ul{
+
+ul {
     list-style: none;
 }
-li{
+
+li {
     border: 1px solid black;
     text-align: center;
     padding: 3px;
+}
+
+@media screen and (max-width : 1200px) {
+
+    /* computadores */
+    .main-container {
+        display: flex;
+    }
+}
+
+@media screen and (min-device-width : 481px) and (max-device-width : 800px) {
+
+    /* tablets */
+    .main-container {
+        display: flex;
+    }
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    /* celulares */
+    .main-container {
+        display: flex;
+    }
 }
