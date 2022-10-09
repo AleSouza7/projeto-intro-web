@@ -8,7 +8,7 @@
     <title>Cavaleiros do Zodiaco</title>
     <!-- //1. Crie uma página HTML, e nesta página, dê um título para sua lista de itens; -->
     <link rel="stylesheet" type="text/css" href="estyle.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <!-- //semana 7 -->
 
@@ -32,11 +32,13 @@
     <main class="main-container">
         <section>
             <nav>
-                <form action="">
-                    <input type="text">
-                    <button>clique aqui</button>
-                </form>
+                <p id="paragrafo">Conteudo do paragrafo</p>
+                <label for="texto">Pesquisar:</label>
+                <input id="texto" name="texto" type="text">
+                <br>
+                <button onclick="acaoClicar()">clique aqui</button>
             </nav>
+
         </section>
         <section class="container-signos">
             <nav class="signos">
@@ -55,13 +57,14 @@
                     <li>Peixes</li>
                 </ul>
             </nav>
+
         </section>
 
         <section class="">
             <ul>
                 <li>Mu de Áries</li>
                 <figure>
-                    <img src="imagens/12CDZOURO.jpg" alt="">
+                    <img src="imagens/mudeAries.jpg" alt="">
                 </figure>
             </ul>
         </section>
