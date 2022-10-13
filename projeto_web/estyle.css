@@ -58,6 +58,12 @@ li {
     padding: 3px;
 }
 
+img{
+    height: 400px;
+    width: 500px;
+    gap: 80px;
+}
+
 @media screen and (max-width : 1200px) {
 
     /* computadores */
