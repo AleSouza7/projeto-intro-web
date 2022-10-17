@@ -1,104 +1,287 @@
-// //semana 11
-// const conteudo =document.getElementById("texto")
-// const frase = document.getElementById("paragrafo")
-
-// function acaoClicar(){
-//     frase.innerHTML = conteudo.value;
-//     conteudo.value = "";
-// }
-
-// //semana1 requisito 1 criar tres variaveis, string, number e boolean
-// //requisito 2 criar 3 conjuntos de variaveis
-// const nome1 = ("Alex").toUpperCase()//string
-// const idade1 = 20 //number
-// const temCadastro1 = true //boolean
-
-// const nome2 = ("Maria").toUpperCase()//string
-// const idade2 = 40 //number
-// const temCadastro2 = false //boolean
-
-// const nome3 = ("Alberi").toUpperCase()//string
-// const idade3 = 50 //number
-// const temCadastro3 = true //boolean
-
-// //requisito 3 fazer a media das tres idades
-
-// const media = Number((idade1 + idade2 + idade3) / 3).toFixed(2)//Acrescentei o toFixed para limitar as casas decimais caso numero seja fracionado
-
-// //requisito 4 imprimir a verificação de booleans
-
-// const checkCadastro = temCadastro1 && temCadastro2 && temCadastro3
-
-// console.log("Semana 1")
-// console.log(media)//debug de verificação do requisito 3
-// console.log(checkCadastro)//debug de verificação do requisito 4
-
-// //Semana 2
-// //Criar mais 1 elemento que seja um array e que mantenha o tipo de dado string boolean ou number
-// const cidade = ["Porto Alegre", "São Paulo", "Sergipe", "Bahia"]
-
-// //Mostrar tudo o que foi criado
-// //titulo ou neste caso trazer a string nome sempre em maiusculo
-// console.log("Semana 2")
-// console.log("Nomes:" + nome1, nome2, nome3)
-// console.log("Idades:" + idade1, idade2, idade3)
-// console.log("Cadastros:" + temCadastro1, temCadastro2, temCadastro3)
-// console.log(`Array de cidades: ${cidade}`)
-
-// //semana 3
-// //Requisito 1. Transforme os itens que criamos nas últimas semanas em objetos.
-
-// const objeto1 = { nome1, idade1, temCadastro1 }
-// const objeto2 = { nome2, idade2, temCadastro2 }
-// const objeto3 = { nome3, idade3, temCadastro3 }
-
-// console.log("Semana 3")//Semana 3
-// console.log(objeto1, objeto2, objeto3)
-
-// //requisito 2. Crie um array para guardar os objetos. Este array deve estar vazio
-
-// const arrayObjeto = []
-
-// //requisito 3. Adicione os objetos criados no item 1 ao array de objetos criado no item 2, utilizando o push()
-
-// arrayObjeto.push(objeto1, objeto2, objeto3)
-
-// console.log(arrayObjeto)
-
-// //semana 4
-
-// console.log("Semana 4")
-
-// //Requisito 1 Altere o objeto da semana 4
-// const novoObjeto = {//criado um objeto para adicionar ao array arrayObjeto
-//     nome4: "Vitória",
-//     idade4: 5,
-//     temCadastro4: false
-// }
-
-// // if (arrayObjeto == true) {
-// //     console.log("validado")
-// //     arrayObjeto.push(novoObjeto)
-// // } else {
-// //     alert("O item não foi adicionado")
-// // }
-// // console.log(arrayObjeto)
-
-// console.log("Semana 5")//Semana 5
-
-
-// console.log("Semana 6")//Semana 6
-
-
-// //Refatoração do projeto // semana 1
-
-// const nomeAries = "Mu";
+// const aries = "Mu de Áries";
 // const idadeAries = 20;
-// const vivoAries = true;
-// const poderAries = ["Muralha de Cristal","Revolução Estelar","Extinção Estelar","Telecinese","Rede de Cristal"];
+// const ariesOuro = true;
+// const poderAries = [
+//   "Muralha de Cristal (Crystal Wall)",
+//   "Revolução Estelar (Stardust Revolution)",
+//   "Extinção Estelar (Starlight Extinction)",
+//   "Telecinese (Psicosinese)",
+//   "Rede de Cristal (Crystal Net)",
+// ];
 
-// const ouroAries=[]
-// ouroAries.push(nomeAries,idadeAries,vivoAries,poderAries)
+// const touro = "Aldebaran de Touro";
+// const idadeTouro = 20;
+// const touroOuro = true;
+// const poderTouro = [
+//   "Grande Chifre (Great Horn)",
+//   "Punho de Aço (Steel Punch)",
+//   "Esquiva Ilusória (Mirageshun)",
+//   "Chifres Cosmicos (Cosmic Horns)",
+// ];
 
-// console.log(ouroAries)
+// const gemeos = "Saga de Gêmeos";
+// const idadeGemeos = 28;
+// const gemeosOuro = true;
+// const poderGemeos = [
+//   "Explosão Galáctica (Galaxian Explosion)",
+//   "Outra Dimensão (Another Dimension)",
+//   "Satã Imperial (Guenrou Maou-ken)",
+//   "Aniquilação Sensorial (Kou Soku Ken)",
+// ];
 
+// const mediaIdades = Number((idadeAries + idadeTouro + idadeGemeos) / 3).toFixed(
+//   0
+// ); //Acrescentei o toFixed para limitar as casas decimais caso numero seja fracionado
+
+// const objetoAries = { aries, idadeAries, ariesOuro, poderAries };
+
+// const objetoTouro = { touro, idadeTouro, touroOuro, poderTouro };
+
+// const objetoGemeos = { gemeos, idadeTouro, gemeosOuro, poderGemeos };
+
+// const todosObjetos = [];
+
+// const signosOuro = ariesOuro && touroOuro && gemeosOuro;
+
+// if (signosOuro == true) {
+//   console.log("validado");
+//   todosObjetos.push(objetoAries, objetoGemeos, objetoTouro);
+// } else {
+//   alert("O item não foi adicionado");
+// }
+
+//semana 2
+// console.log(
+//   `${aries.toUpperCase()} \n ${idadeAries} \n ${ariesOuro} \n ${poderAries}`
+// );
+// console.log(
+//   `${touro.toUpperCase()} \n ${idadeTouro} \n ${touroOuro} \n ${poderTouro}`
+// );
+// console.log(
+//   `${gemeos.toUpperCase()} \n ${idadeGemeos} \n ${gemeosOuro} \n ${poderGemeos}`
+// );
+// console.log(todosObjetos);
+// console.log(objetoAries);
+
+const objeto1 = {
+  signo: "Áries",
+  nome: "Mu de Áries",
+  idade: 20,
+  imagem:"./imagens/1muÁries.gif",
+  cavaleiroOuro: true,
+  historia:"https://pt.wikipedia.org/wiki/Os_Cavaleiros_do_Zod%C3%ADaco",
+  poderes: [
+    " Muralha de Cristal (Crystal Wall)", 
+    " Revolução Estelar (Stardust Revolution)", 
+    " Extinção Estelar (Starlight Extinction)", 
+    " Telecinese (Psicosinese)", 
+    " Rede de Cristal (Crystal Net)",
+  ],
+};
+
+const objeto2 = {
+  signo: "Touro",
+  nome: "Aldebaran de Touro",
+  idade: 20,
+  imagem:"./imagens/2aldebaranTouro.gif",
+  cavaleiroOuro: true,
+  historia:"https://pt.wikipedia.org/wiki/Os_Cavaleiros_do_Zod%C3%ADaco",
+  poderes: [
+    " Grande Chifre (Great Horn)",
+    " Punho de Aço (Steel Punch)",
+    " Esquiva Ilusória (Mirageshun)",
+    " Chifres Cosmicos (Cosmic Horns)",
+  ],
+};
+
+const objeto3 = {
+  signo: "Gêmeos",
+  nome: "Saga de Gêmeos",
+  idade: 28,
+  imagem: "./imagens/3sagaGêmeos.gif",
+  cavaleiroOuro: true,
+  historia:"https://pt.wikipedia.org/wiki/Os_Cavaleiros_do_Zod%C3%ADaco",
+  poderes: [
+    " Explosão Galáctica (Galaxian Explosion)",
+    " Outra Dimensão (Another Dimension)",
+    " Satã Imperial (Guenrou Maou-ken)",
+    " Aniquilação Sensorial (Kou Soku Ken)",
+  ],
+};
+
+const arrayObjetos = [];
+
+if (
+  objeto1.cavaleiroOuro == true &&
+  objeto2.cavaleiroOuro == true &&
+  objeto3.cavaleiroOuro == true
+) {
+  //   console.log("validado passou pelo if e else");
+  arrayObjetos.push(objeto1, objeto2, objeto3);
+} else {
+  alert("O item não foi adicionado");
+}
+
+// console.log(arrayObjetos)
+
+// const mediaIdadesObjetos = Number((objeto1.idade + objeto1.idade + objeto2.idade) / 3).toFixed(
+//     0
+//   );
+
+//   console.log(
+//   `${objeto1.nome.toUpperCase()} \n ${objeto1.idade} \n ${objeto1.cavaleiroOuro} \n ${objeto1.poderes}`
+// );
+// console.log(
+//     `${objeto2.nome.toUpperCase()} \n ${objeto2.idade} \n ${objeto3.cavaleiroOuro} \n ${objeto2.poderes}`
+//   );
+//   console.log(
+//     `${objeto3.nome.toUpperCase()} \n ${objeto3.idade} \n ${objeto3.cavaleiroOuro} \n ${objeto3.poderes}`
+//   );
+
+//semana 5
+
+let ariesPoder = ``;
+
+for (i in objeto1.poderes) {
+  ariesPoder += `${objeto1.poderes[i]}, `;
+}
+
+// console.log(ariesPoder);
+
+let touroPoder = ``;
+
+for (i in objeto2.poderes) {
+  touroPoder += `${objeto2.poderes[i]}, `;
+}
+
+// console.log(touroPoder);
+
+let gemeosPoder = ``;
+
+for (i in objeto3.poderes) {
+  gemeosPoder += `${objeto3.poderes[i]}, `;
+}
+
+// console.log(gemeosPoder);
+
+// console.log(
+//   `${objeto1.nome.toUpperCase()} \n ${objeto1.idade} \n ${
+//     objeto1.cavaleiroOuro
+//   } \n ${ariesPoder}`
+// );
+// console.log(
+//   `${objeto2.nome.toUpperCase()} \n ${objeto2.idade} \n ${
+//     objeto3.cavaleiroOuro
+//   } \n ${touroPoder}`
+// );
+// console.log(
+//   `${objeto3.nome.toUpperCase()} \n ${objeto3.idade} \n ${
+//     objeto3.cavaleiroOuro
+//   } \n ${gemeosPoder}`
+// );
+
+//serve para dar manutenção no meus objetos
+for (let i in arrayObjetos) {
+//   console.log(arrayObjetos[i]);
+}
+
+//semana6
+function retornaObjeto(refbusca) {
+  let stringObjeto = ``;
+  stringObjeto = refbusca;
+  // console.log(stringObjeto);
+    // return stringObjeto
+}
+
+// retornaObjeto(objeto1);
+
+// function consulta(arrayObj, string) {
+//   let consulta = {};
+//   for (let i in arrayObj) {
+//     for (let j in arrayObj[i]) {
+//       if (arrayObj[i][j] === string) {
+//         //condição
+//         consulta = arrayObj[i];
+//       }
+//     }
+//   }
+
+  const consulta = (arrayObj, input) => {
+    for (let i in arrayObj) {
+      for (let j in arrayObj[i]) {
+        if (arrayObj[i][j] === input) {
+          let main = document.getElementById("main")
+          let div = document.createAttribute("div")
+          let section = document.createElement("section")
+          let imagem = document.createElement("img")
+          let ul = document.createElement("ul")
+          let li2 = document.createElement("li")
+          let li3 = document.createElement("li")
+          let li4 = document.createElement("li")
+          let a = document.createElement("a")
+      
+          div.setAttribute("id","conteudo-listas")
+          section.setAttribute("id","itens-imagens")
+          imagem.src = arrayObj[i].imagem
+          a.setAttribute("href",arrayObj[i].historia)
+          a.innerHTML = arrayObj[i].signo.toUpperCase()
+
+          li2.innerHTML = `Nome: ${arrayObj[i].nome}`
+          li3.innerHTML = `Idade: ${arrayObj[i].idade} anos`
+          li4.innerHTML = `Poderes: ${arrayObj[i].poderes}`
+      
+          main.appendChild(div)
+          div.appendChild(section)          
+          section.appendChild(imagem)
+          section.appendChild(ul)
+          ul.appendChild(li2)
+          ul.appendChild(li3)
+          ul.appendChild(li4)
+          
+        }
+      }
+    }
+  // console.log(consulta);
+    // return consulta
+}
+
+for (i in arrayObjetos){
+    let div = document.getElementById("conteudo-listas")
+    let section = document.createElement("itens-imagens")
+    let imagem = document.createElement("img")
+    let ul = document.createElement("ul")
+    let li2 = document.createElement("li")
+    let li3 = document.createElement("li")
+    let li4 = document.createElement("li")
+    let a = document.createElement("a")
+
+    section.setAttribute("id","itens-imagens")
+    imagem.src = arrayObjetos[i].imagem
+    a.setAttribute("href",arrayObjetos[i].historia)
+    a.innerHTML = arrayObjetos[i].signo.toUpperCase()
+    li2.innerHTML = `Nome ${arrayObjetos[i].nome}`
+    li3.innerHTML = `Idade: ${arrayObjetos[i].idade} anos`
+    li4.innerHTML = `Poderes: ${arrayObjetos[i].poderes}`
+
+    div.appendChild(section)
+    
+    section.appendChild(imagem)
+    section.appendChild(ul)
+    ul.appendChild(li2)
+    ul.appendChild(li3)
+    ul.appendChild(li4)
+    li1.appendChild(a)
+
+}
+
+function localizar(event){
+  event.preventDefault()
+  let input = document.getElementById("input").value().toLowercase()
+  if (input === "") {
+    alert("digite novamente")
+  } else {
+    document.getElementById("conteudo-listas").remove()
+
+    consulta(arrayObjetos , input)
+  }
+}

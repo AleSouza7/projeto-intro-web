@@ -8,8 +8,7 @@
     <title>Cavaleiros do Zodiaco</title>
     <!-- //1. Crie uma página HTML, e nesta página, dê um título para sua lista de itens; -->
     <link rel="stylesheet" type="text/css" href="estyle.css">
-    <!-- <script src="script.js" defer></script> -->
-    <script src="scriptRef.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <!-- //semana 7 -->
 
@@ -17,171 +16,20 @@
     <!-- //Cabeçalho -->
     <header>
         <section>
-            <h2>
-                Cavaleiros do Zodiaco
-            </h2>
-        </section>
-
-        <section>
-            <h2>
-                <a href="">logout</a>
-            </h2>
+            <h2>Cavaleiros do Zodiaco</h2>
         </section>
     </header>
     <!--//semana8 -->
     <!-- //Seção principal -->
-    <main class="main-container">
-
-        <div>
-            <input id="texto" name="texto" type="text"><br>
-            <label for="texto">Pesquisar:</label>
-            <button onclick="acaoClicar()">Busca</button>
+    <main id="main" class="main">
+        <div class="pesquisar">
+            <form class="form">
+                <input id="input" name="localizar" value="" type="text" placeholder="">
+                <button onclick="localizar(event)" class="button">Localizar</button>
+            </form>
         </div>
 
-        <div>
-            <!-- <section>
-                <nav>
-                    <p id="paragrafo">Conteudo do paragrafo</p>
-                    <label for="texto">Pesquisar:</label>
-                    <input id="texto" name="texto" type="text">
-                    <br>
-                    <button onclick="acaoClicar()">Busca</button>
-                </nav>
-
-            </section> -->
-
-            <section class="container-signos">
-                <nav class="signos">
-                    <ul class="content-container">
-                        <li>Áries</li>
-                        <li>Touro</li>
-                        <li>Gêmeos</li>
-                        <li>Câncer</li>
-                        <li>Leão</li>
-                        <li>Virgem</li>
-                        <li>Libra</li>
-                        <li>Escorpião</li>
-                        <li>Sagitário</li>
-                        <li>Capricórnio</li>
-                        <li>Aquário</li>
-                        <li>Peixes</li>
-                    </ul>
-                </nav>
-
-            </section>
-
-            <!-- Semana7 -->
-            <section class="">
-                <ul>
-                    <li>Mu de Áries
-                        <figure>
-                            <p></p>
-                            <img src="imagens/1muÁries.gif" alt="">
-                        </figure>
-                    </li>
-                    <ul>
-                        <li>Aldebaran de Touro
-                            <figure>
-                                <p></p>
-                                <img src="imagens/2aldebaranTouro.gif" alt="">
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>Saga de Gêmeos
-                            <figure>
-                                <p></p>
-                                <img src="imagens/3sagaGêmeos.gif" alt="">
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>Máscara da Morte de Câncer
-                            <figure>
-                                <p></p>
-                                <img src="imagens/4mascaraMorte.gif" alt="">
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>Aiolia de Leão
-                            <figure>
-                                <p></p>
-                                <img src="imagens/5aioliaLeâo.gif" alt="">
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>Shaka de Virgem
-                            <figure>
-                                <p></p>
-                                <img src="imagens/6shakaVirgem.gif" alt="">
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>Dohko de Libra
-                            <figure>
-                                <p></p>
-                                <img src="imagens/7dohkoLibra.gif" alt="">
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>Milo de Escorpião
-                            <figure>
-                                <p></p>
-                                <img src="imagens/8MiloEscorpião.gif" alt="">
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>Aioros de Sagitário
-                            <figure>
-                                <p></p>
-                                <img src="imagens/9aiolosSagitário.gif" alt="">
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>Shura de Capricórnio
-                            <figure>
-                                <p></p>
-                                <img src="imagens/10shuraCapricórnio.gif" alt="">
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>Camus de Aquário
-                            <figure>
-                                <p></p>
-                                <img src="imagens/11camusAquário.gif" alt="">
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>Afrodite de Peixes
-                            <figure>
-                                <img src="imagens/12afroditePeixes.gif" alt="">
-                                <p>Afrodite de Peixes costuma acompanhar Máscara da Morte de Câncer na base das lista
-                                    dos
-                                    Cavaleiros de Ouro. A Rosa Sangrenta é um golpe interessante, conceitualmente.
-                                    Afinal,
-                                    uma
-                                    Rosa Branca disparada no coração do alvo que se torna vermelha após absorver todo o
-                                    sangue
-                                    do inimigo traz algo de artístico para o combate. Contudo, para esta Rosa funcionar
-                                    como
-                                    deveria, Afrodite costuma ter de acertar antes os golpes Rosas Diabólicas Reais e
-                                    Rosas
-                                    Piranhas, aumentando o tempo de reação do alvo.</p>
-                            </figure>
-                        </li>
-                    </ul>
-                </ul>
-            </section>
-
-        </div>
+        <div id="conteudo-listas"></div>
 
     </main>
     <!--Footer  -->
