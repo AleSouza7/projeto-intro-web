@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cavaleiros do Zodiaco</title>
+    <!-- //1. Crie uma página HTML, e nesta página, dê um título para sua lista de itens; -->
     <link rel="stylesheet" type="text/css" href="estyle.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
+<!-- //semana 7 -->
+
 <body>
-    
-    
+    <!-- //Cabeçalho -->
+    <header>
+        <section>
+            <h2>Cavaleiros do Zodiaco</h2>
+        </section>
+    </header>
+    <!--//semana8 -->
+    <!-- //Seção principal -->
+    <main id="main" class="main">
+        <div class="pesquisar">
+            <form class="form">
+                <input id="input" name="localizar" value="" type="text" placeholder="">
+                <button onclick="localizar(event)" class="button">Localizar</button>
+            </form>
+        </div>
+
+        <div id="conteudo-listas"></div>
+
+    </main>
+    <!--Footer  -->
+    <footer>
+        <p>Alex Costa de Souza <a href="https://github.com/AleSouza7">Github</a></p>
+        <!--//semana8 -->
+    </footer>
+
 </body>
+
 </html>
